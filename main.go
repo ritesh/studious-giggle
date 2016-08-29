@@ -21,7 +21,12 @@ func main() {
 const (
 	msgHello = `<?xml version="1.0" encoding="UTF-8"?>
 <Response> 
-<Say> What's the password? </Say>
+<Say> What is love?
+Baby, don't hurt me
+Don't hurt me no more
+Baby, don't hurt me
+Don't hurt me no more
+What is love? </Say>
 </Response> `
 )
 
