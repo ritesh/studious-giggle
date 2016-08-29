@@ -1,10 +1,19 @@
 package main
 
-import "net/http"
+import (
+	"log"
+	"net/http"
+	"os"
+)
 
 func main() {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = ":5050"
+	}
+	log.Printf("%s", port)
 	http.HandleFunc("/", sayHello)
-	http.ListenAndServe(":5050", nil)
+	log.Fatal(http.ListenAndServe(port, nil))
 }
 
 const (
