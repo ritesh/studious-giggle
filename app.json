@@ -1,0 +1,10 @@
+{
+  "name": "twilio test"
+  "description": "Endpoint for twilio",
+  "keywords": [
+    "go",
+    "example"
+  ],
+  "image": "heroku/go:1.7",
+  "repository": "http://github.com/ritesh/studious-giggle"
+}
