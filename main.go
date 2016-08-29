@@ -10,6 +10,8 @@ func main() {
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = ":5050"
+	} else {
+		port = ":" + port
 	}
 	log.Printf("%s", port)
 	http.HandleFunc("/", sayHello)
